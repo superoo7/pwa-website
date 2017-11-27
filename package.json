@@ -1,7 +1,7 @@
 {
-  "name": "landing-page",
+  "name": "PWA sample",
   "version": "1.0.0",
-  "description": "Landing Page for PhytoMark",
+  "description": "PWA slides",
   "main": "index.js",
   "author": "Lai Weng Han",
   "license": "MIT",

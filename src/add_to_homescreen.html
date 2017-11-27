@@ -15,10 +15,9 @@
     <meta name="mobile-web-app-capable" content="yes">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="manifest" href="/manifest.json"> 
-    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="manifest" href="/manifest.json">    <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="PhytoMark">
+    <meta name="apple-mobile-web-app-title" content="OpenDota">
     <link rel="apple-touch-icon" href="./images/icons/icon-72x72.png" sizes="72x72">
     <link rel="apple-touch-icon" href="./images/icons/icon-96x96.png" sizes="96x96">
     <link rel="apple-touch-icon" href="./images/icons/icon-128x128.png" sizes="128x128">
@@ -38,7 +37,7 @@
       <div class="nav-wrapper container">
         <ul id="nav" class="side-nav" style="transform: translateX(-100%);">
           <li>
-              <a href="/">Home</a>
+            <a href="/">Home</a>
           </li>
           <li>
             <a href="/add_to_homescreen.html">Add To Home Screen</a>
@@ -54,40 +53,17 @@
       </div>
     </nav>
     <!-- NAV END -->
-    <div class="container">
-      <div class="row">
-          <div class="col s6 m6">
-              <div class="card">
-                <div class="card-image">
-                  <img src="images/pwa/add_to_homescreen1.png">
-                </div>
-                <div class="card-content">
-                  <h4>Add to Homescreen</h4>
-                  <p>On iOS Safari, when add to homescreen is pressed</p>
-                </div>
-                <div class="card-action">
-                  <a href="/add_to_homescreen.html">Add to Homescreen</a>
-                </div>
-              </div>
-            </div>
 
-            <div class="col s6 m6">
-                <div class="card">
-                  <div class="card-image">
-                    <img src="images/pwa/add_to_homescreen1.png">
-                  </div>
-                  <div class="card-content">
-                    <h4>Add to Homescreen</h4>
-                    <p>On Android devices, when add to homescreen is pressed</p>
-                  </div>
-                  <div class="card-action">
-                    <a href="/add_to_homescreen.html">Add to Homescreen</a>
-                  </div>
-                </div>
-              </div> 
-      
-          </div>
+    <div class="container">
+        <h1>
+            Phytomark
+        </h1>
+        <button id="btnSave" class="btn">
+            Add to Homescreen
+        </button>
     </div>
+    <script src="/js/add_to_homescreen.js"></script>
+
     <!-- JS Script Start -->
     <script src="js/jquery.min.js"></script>
     <script src="js/materialize.js"></script>
