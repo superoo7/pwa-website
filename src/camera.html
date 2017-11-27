@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhytoMark</title>
+    <!--Import Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- CSS START -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- CSS END -->
+    <!-- PROGRESSIVE WEB START -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="OpenDota">
+    <link rel="apple-touch-icon" href="./images/icons/icon-72x72.png" sizes="72x72">
+    <link rel="apple-touch-icon" href="./images/icons/icon-96x96.png" sizes="96x96">
+    <link rel="apple-touch-icon" href="./images/icons/icon-128x128.png" sizes="128x128">
+    <link rel="apple-touch-icon" href="./images/icons/icon-144x144.png" sizes="144x144">
+    <link rel="apple-touch-icon" href="./images/icons/icon-152x152.png" sizes="152x152">
+    <link rel="apple-touch-icon" href="./images/icons/icon-192x192.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="./images/icons/icon-384x384.png" sizes="384x384">
+    <link rel="apple-touch-icon" href="./images/icons/icon-512x512.png" sizes="512x512">
+    <meta name="msapplication-TileImage" content="./images/icons/icon-144x144.png">
+    <meta name="msapplication-TileColor" content="#FFF">
+    <meta name="theme-color" content="#FFFFFF">
+    <!-- PROGRESSIVE WEB END -->
+</head>
+
+<body>
+    <!-- NAV START -->
+    <nav class="light-green lighten-1" role="navigation">
+        <div class="nav-wrapper container">
+            <ul id="nav" class="side-nav" style="transform: translateX(-100%);">
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="/add_to_homescreen.html">Add To Home Screen</a>
+                </li>
+                <li>
+                    <a href="/push_notification_permission.html">Push Notification Permisison</a>
+                </li>
+                <li>
+                    <a href="/weird_form.html">Weird Form</a>
+                </li>
+            </ul>
+            <a href="#" data-activates="nav" class="button-collapse show-on-large">
+                <i class="material-icons">menu</i>
+            </a>
+            <a href="/" class="brand-logo">PWA</a>
+        </div>
+    </nav>
+    <!-- NAV END -->
+    <h1 class="center">Camera</h1>
+    <div class="container">
+        <video style="width: 100%;" autoplay muted />
+    </div>
+    <div class="center-align">
+        <button onclick="toggleMute()" class="btn" id="toggle">Unmute</button>
+    </div>
+    <script>
+      var errorCallback = function(e) {
+        console.log('Reeeejected!', e);
+      };
+    
+      // Not showing vendor prefixes.
+      navigator.getUserMedia({video: true, audio: true}, function(localMediaStream) {
+        var video = document.querySelector('video');
+        video.src = window.URL.createObjectURL(localMediaStream);
+    
+        // Note: onloadedmetadata doesn't fire in Chrome when using it with getUserMedia.
+        // See crbug.com/110938.
+        video.onloadedmetadata = function(e) {
+          // Ready to go. Do some stuff.
+        };
+      }, errorCallback);
+
+      function toggleMute() {
+        var vid = document.querySelector('video');
+        var toggleButton = document.querySelector("#toggle");
+
+        if (toggleButton.innerText==="UNMUTE") {
+            if (confirm("Are you sure you want to unmute it?") == true) {
+                if (confirm("Are really sure?") == true) {
+                    if (confirm("This will get very very noisy") == true) {
+                        vid.muted = false;
+                        toggleButton.innerText = 'mute';
+                    }
+                }
+            }
+        } else {
+            vid.muted = true;
+            toggleButton.innerText = 'Unmute';
+        }
+      }
+    </script> 
+
+    <!-- JS Script Start -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/main.js"></script>
+    <!-- JS Script End -->
+</body>
+
+</html>

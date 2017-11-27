@@ -25,7 +25,7 @@ function notificationPermission() {
             console.log('Permission granted');
             enableNotificationButton.style.display = 'none';
             document.getElementById("content").innerHTML += 
-                '<h5 class="blue white-text center">NOTIFICATION WAS ENABLED</h5><a href="/push_notification.html" class="btn blue">Continue here...</a>';
+                '<h5 class="blue white-text center">NOTIFICATION WAS ENABLED</h5>'
             sampleNotification();
         }
     })
