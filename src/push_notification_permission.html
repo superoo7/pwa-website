@@ -33,26 +33,26 @@
   </head>
   <body>
     <!-- NAV START -->
-    <nav class="light-blue lighten-1" role="navigation">
-      <div class="nav-wrapper container">
-        <ul id="nav" class="side-nav" style="transform: translateX(-100%);">
-          <li>
-              <a href="/">Home</a>
-          </li>
-          <li>
-            <a href="/add_to_homescreen.html">Add To Homescreen</a>
-          </li>
-          <li>
-            <a href="/push_notification_permission.html">Push Notification Permisison</a>
-          </li>
-        </ul>
-        <a href="#" data-activates="nav" class="button-collapse show-on-large">
-          <i class="material-icons">menu</i>
-        </a>
-        <a href="/" class="brand-logo">PWA</a>
-      </div>
-    </nav>
-    <!-- NAV END -->
+    <nav class="light-green lighten-1" role="navigation">
+        <div class="nav-wrapper container">
+          <ul id="nav" class="side-nav" style="transform: translateX(-100%);">
+            <li>
+                <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="/add_to_homescreen.html">Add To Home Screen</a>
+            </li>
+            <li>
+              <a href="/push_notification_permission.html">Push Notification Permisison</a>
+            </li>
+          </ul>
+          <a href="#" data-activates="nav" class="button-collapse show-on-large">
+            <i class="material-icons">menu</i>
+          </a>
+          <a href="/" class="brand-logo">PWA</a>
+        </div>
+      </nav>
+      <!-- NAV END -->
 
     <style>
       #notification_permission {
@@ -60,11 +60,13 @@
       }
     </style>
 
-    <div class="container">
-      <h1>Push Notification Permission</h1>
-      <button id="notification_permission" class="btn">
-        Enable Notification
-      </button>
+    <div class="container" id="content">
+      <h1 class="center">Push Notification Permission</h1>
+      <div class="center-align">
+        <button id="notification_permission" class="btn center-align">
+          Enable Notification
+        </button>
+      </div>
     </div>
 
     <script src="js/push_notification_permission.js"></script>

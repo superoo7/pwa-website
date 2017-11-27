@@ -34,7 +34,7 @@
   </head>
   <body>
     <!-- NAV START -->
-    <nav class="light-blue lighten-1" role="navigation">
+    <nav class="light-green lighten-1" role="navigation">
       <div class="nav-wrapper container">
         <ul id="nav" class="side-nav" style="transform: translateX(-100%);">
           <li>
@@ -54,40 +54,79 @@
       </div>
     </nav>
     <!-- NAV END -->
-    <div class="container">
-      <div class="row">
-          <div class="col s6 m6">
-              <div class="card">
-                <div class="card-image">
-                  <img src="images/pwa/add_to_homescreen1.png">
-                </div>
-                <div class="card-content">
-                  <h4>Add to Homescreen</h4>
-                  <p>On iOS Safari, when add to homescreen is pressed</p>
-                </div>
-                <div class="card-action">
-                  <a href="/add_to_homescreen.html">Add to Homescreen</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col s6 m6">
-                <div class="card">
-                  <div class="card-image">
-                    <img src="images/pwa/add_to_homescreen1.png">
-                  </div>
-                  <div class="card-content">
-                    <h4>Add to Homescreen</h4>
-                    <p>On Android devices, when add to homescreen is pressed</p>
-                  </div>
-                  <div class="card-action">
-                    <a href="/add_to_homescreen.html">Add to Homescreen</a>
-                  </div>
-                </div>
-              </div> 
+    <div id="header">
+      <style>
+        #header {
+          background-color: #323090;
+          background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%233f66d9' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+      </style>
+        <br><br>
+        <br><br>
+        <h1 class="header center green-text">PWA Guide</h1>
+        <div class="row center">
+          <h5 class="header col s12 white-text">Add to Homescreen, Push Notification, and more...</h5>
+        </div>
+        <div class="row center">
+          <a href="#content" class="btn-large waves-effect waves-light light-green">Get Started</a>
+        </div>
+        <br><br>
+        <br><br>
+    </div>
+    <div class="light-green lighten-4">
+        <div class="container" id="content">
+            <div class="row">
       
+            </div>
+            <div class="row">
+                <div class="col s12 m6">
+                    <div class="card">
+                      <div class="card-image">
+                        <img src="images/pwa/add_to_homescreen1.png">
+                      </div>
+                      <div class="card-content">
+                        <h4>Add to Homescreen</h4>
+                        <p>On iOS <strong>Safari</strong>, when add to homescreen is pressed</p>
+                      </div>
+                      <div class="card-action">
+                        <a class="green-text" href="/add_to_homescreen.html">Add to Homescreen</a>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <div class="col s12 m6">
+                      <div class="card">
+                        <div class="card-image">
+                          <img src="images/pwa/add_to_homescreen1.png">
+                        </div>
+                        <div class="card-content">
+                          <h4>Add to Homescreen (Android)</h4>
+                          <p>On Android <strong>Chrome</strong>, when add to homescreen is pressed</p>
+                        </div>
+                        <div class="card-action">
+                          <a class="green-text" href="/add_to_homescreen.html">Add to Homescreen</a>
+                        </div>
+                      </div>
+                    </div> 
+            
+                </div>
+          </div>
+
+          <!-- Element Showed -->
+          <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+              <a id="menu" class="waves-effect waves-light btn btn-floating" ><i class="material-icons">person_pin</i></a>
+          </div>
+          <!-- Tap Target Structure -->
+          <div class="tap-target green" data-activates="menu">
+            <div class="tap-target-content white-text">
+              <h5>Created by <a class="white-text dark" target="_blank" href="https://github.com/superoo7">Lai Weng Han</a></h5>
+              <p>Web Developer @ PhytoMark</p>
+            </div>
           </div>
     </div>
+    
+
+
     <!-- JS Script Start -->
     <script src="js/jquery.min.js"></script>
     <script src="js/materialize.js"></script>
