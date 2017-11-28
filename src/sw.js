@@ -37,17 +37,17 @@ self.addEventListener('push', function(event) {
     console.log("Push Notification Received", event);
     var data = {title: "New MESSAGE!!!!", content: "Come check the details!!!"};
     
-    if (event.data) {
-      data = JSON.parse(event.data.text());
-    }
+    // if (event.data) {
+    //   data = JSON.parse(event.data.text());
+    // }
 
     var options = {
-      body: data.content,
+      body: "PUSH EVENT",
       icon: "/images/icons/icon-96x96.png",
       badge: "/images/icons/icon-96x96.png"
     }
 
     event.waitUntil(
-      self.registration.showNotification(data.title, options)
+      self.registration.showNotification("TITLE", options)
     );
 });

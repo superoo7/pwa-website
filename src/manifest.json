@@ -1,8 +1,8 @@
 {
   "name": "PhytoMark",
   "short_name": "PhytoMark",
-  "theme_color": "#ffffff",
-  "background_color": "#ffffff",
+  "theme_color": "#99CB73",
+  "background_color": "#99CB7",
   "display": "standalone",
   "orientation": "portrait",
   "Scope": "/",

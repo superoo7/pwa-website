@@ -8,7 +8,10 @@ document.getElementById("navbar").innerHTML += `<nav class="light-green lighten-
             <a href="/add_to_homescreen.html">Add To Home Screen</a>
         </li>
         <li>
-            <a href="/push_notification_permission.html">Push Notification Permisison</a>
+            <a href="/push_notification_permission.html">Notification Permisison</a>
+        </li>
+        <li>
+            <a href="/push_notification.html">Push Notification</a>
         </li>
         <li>
             <a href="/weird_form.html">Weird Form</a>
