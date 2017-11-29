@@ -2,10 +2,10 @@ document.getElementById("navbar").innerHTML += `<nav class="light-green lighten-
 <div class="nav-wrapper container">
     <ul id="nav" class="side-nav" style="transform: translateX(-100%);">
         <li>
-            <a href="pwa-website">Home</a>
+            <a href="index.html">Home</a>
         </li>
         <li>
-            <a href="pwa-website/add_to_homescreen.html">Add To Home Screen</a>
+            <a href="add_to_homescreen.html">Add To Home Screen</a>
         </li>
         <li>
             <a href="push_notification_permission.html">Notification Permisison</a>
@@ -23,7 +23,7 @@ document.getElementById("navbar").innerHTML += `<nav class="light-green lighten-
     <a href="#" data-activates="nav" class="button-collapse show-on-large">
         <i class="material-icons">menu</i>
     </a>
-    <a href="/" class="brand-logo">PWA</a>
+    <a href="index.html" class="brand-logo">PWA</a>
 </div>
 </nav>
 `;
