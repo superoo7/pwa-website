@@ -1,27 +1,12 @@
-# Setup for Materialise CSS workflow
-Powered by:
+# PWA Website
+This sample website shows a few core features of Progressive Web Apps
 
-[![phytomark](phytomark.png)](https://github.com/PhytoMark)
+[https://pwa_presentation.surge.sh](https://pwa_presentation.surge.sh)
 
-Stater pack for Materializecss and sass
+## Features
+- Add To Homescreen
+- Push Notification
 
-# ToDo
-- Add progressive web app approach:
-    - manifest.json
-    - service worker
-
-## Include in the box
-- Gulp task runner with browsersync
-- Scss compiler
-- MaterialiseCSS
-- Font Awesome, Material Design Icon and Roboto
-
-## To install
-- git clone
-- `npm install` or `yarn install`
-- dev mode `npm run dev` or `yarn run dev`
-
-## Similar to this project
-- [Bootstrap Starter](https://github.com/PhytoMark/bootstrap-starter)
-- [Bulma Starter](https://github.com/PhytoMark/bulma-starter)
-
+## Installation
+- Install: `npm install` or `yarn install`
+- Development: `npm run gulp` or `yarn run gulp`

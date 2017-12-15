@@ -6,10 +6,12 @@
   "author": "Lai Weng Han",
   "license": "MIT",
   "scripts": {
-    "dev": "gulp"
+    "dev": "gulp",
+    "deploy": "gh-pages -d src"
   },
   "dependencies": {
     "font-awesome": "^4.7.0",
+    "gh-pages": "^1.1.0",
     "materialize-css": "^0.100.2"
   },
   "devDependencies": {

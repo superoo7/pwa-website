@@ -2,7 +2,7 @@
   "name": "PhytoMark",
   "short_name": "PhytoMark",
   "theme_color": "#99CB73",
-  "background_color": "#99CB7",
+  "background_color": "#99CB73",
   "display": "standalone",
   "orientation": "portrait",
   "Scope": "/",
