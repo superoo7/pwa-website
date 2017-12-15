@@ -35,30 +35,10 @@
 </head>
 
 <body>
-    <!-- NAV START -->
-    <nav class="light-green lighten-1" role="navigation">
-        <div class="nav-wrapper container">
-            <ul id="nav" class="side-nav" style="transform: translateX(-100%);">
-                <li>
-                    <a href="/">Home</a>
-                </li>
-                <li>
-                    <a href="/add_to_homescreen.html">Add To Home Screen</a>
-                </li>
-                <li>
-                    <a href="/push_notification_permission.html">Push Notification Permisison</a>
-                </li>
-                <li>
-                    <a href="/weird_form.html">Weird Form</a>
-                </li>
-            </ul>
-            <a href="#" data-activates="nav" class="button-collapse show-on-large">
-                <i class="material-icons">menu</i>
-            </a>
-            <a href="/" class="brand-logo">PWA</a>
-        </div>
-    </nav>
-    <!-- NAV END -->
+  <!-- NAV START -->
+  <div id="navbar"></div>
+  <script src="./js/nav.js"></script>
+  <!-- NAV END -->
     <h1 class="center">Camera</h1>
     <div class="container">
         <video style="width: 100%;" autoplay muted />
@@ -70,12 +50,12 @@
       var errorCallback = function(e) {
         console.log('Reeeejected!', e);
       };
-    
+
       // Not showing vendor prefixes.
       navigator.getUserMedia({video: true, audio: true}, function(localMediaStream) {
         var video = document.querySelector('video');
         video.src = window.URL.createObjectURL(localMediaStream);
-    
+
         // Note: onloadedmetadata doesn't fire in Chrome when using it with getUserMedia.
         // See crbug.com/110938.
         video.onloadedmetadata = function(e) {
@@ -101,7 +81,7 @@
             toggleButton.innerText = 'Unmute';
         }
       }
-    </script> 
+    </script>
 
     <!-- JS Script Start -->
     <script src="js/jquery.min.js"></script>

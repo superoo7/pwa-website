@@ -1,4 +1,6 @@
-document.getElementById("navbar").innerHTML += `<nav class="light-green lighten-1" role="navigation">
+document.getElementById(
+    'navbar'
+).innerHTML += `<nav class="light-green lighten-1" role="navigation">
 <div class="nav-wrapper container">
     <ul id="nav" class="side-nav" style="transform: translateX(-100%);">
         <li>
@@ -12,6 +14,9 @@ document.getElementById("navbar").innerHTML += `<nav class="light-green lighten-
         </li>
         <li>
             <a href="push_notification.html">Push Notification</a>
+        </li>
+        <li>
+            <a href="https://push-rails-oo7.herokuapp.com" target="_blank">REAL PUSH NOTIF</a>
         </li>
         <li>
             <a href="weird_form.html">Weird Form</a>
