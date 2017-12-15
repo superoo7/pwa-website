@@ -14,7 +14,7 @@ self.addEventListener('install', function(event) {
         '/add_to_homescreen.html',
         '/push_notification_permission.html',
         '/push_notification.html',
-        '/weirdform.html',
+        '/weird_form.html',
         '/css/font-awesome.min.css',
         '/css/materialize.css',
         '/css/style.css',
@@ -67,7 +67,9 @@ self.addEventListener('fetch', function(event) {
               return res;
             });
           })
-          .catch(function(err) {});
+          .catch(function(err) {
+            console.log(err);
+          });
       }
     })
   );
