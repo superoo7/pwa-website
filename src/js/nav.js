@@ -25,7 +25,7 @@ document.getElementById(
             <a href="camera.html">Camera</a>
         </li>
         <li>
-            <a herf="payment.html">Payment</a>
+            <a href="payment.html">Payment</a>
         </li>
     </ul>
     <a href="#" data-activates="nav" class="button-collapse show-on-large">
