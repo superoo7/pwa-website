@@ -24,6 +24,9 @@ document.getElementById(
         <li>
             <a href="camera.html">Camera</a>
         </li>
+        <li>
+            <a herf="payment.html">Payment</a>
+        </li>
     </ul>
     <a href="#" data-activates="nav" class="button-collapse show-on-large">
         <i class="material-icons">menu</i>
